@@ -1,11 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <style>
+        body {
+            background-color: rgb(71, 67, 67);
+            position: relative;
+
+        }
+
+        .about_me {
+            margin: 0;
+            color: black;
+            width: 240px;
+            height: 80px;
+            position: relative;
+            border-radius: 30px;
+            background-color: gray;
+            border-style: solid;
+            top: 105px; /*  */
+            left: 750px;
+        }
+
+        #box1 {
+            color: black;
+            border: 5px solid;
+            width: 650px;
+            height: 450px;
+            border-radius: 15px;
+            background-color: gray;
+            position: relative;
+            bottom: -190px;
+            left: 100px;            
+            font-weight: bold;
+
+        }
+
+        #box2 {
+            color: black;
+            border: 5px solid;
+            width: 650px;
+            height: 450px;
+            border-radius: 15px;
+            background-color: gray;
+            position: relative;
+            bottom: 260px;
+            left: 1000px;
+            font-size: 3em;
+            font-weight: bold;
+        }
+        #box1 p{
+            font-size: 2em;
+        }
+        #box2 p{
+            font-size: 70%;
+        }
+
+        .dark-mode {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            box-shadow: 0 1px 4px black;
+
+        }
+        .button {
+            background-color: gray;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 18px 18px;
+            position: relative;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            width: 100%;
+            top: 0;
+            margin-left: -10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            margin-left: 5px;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        nav li {
+            float: left;
+            margin: 0;
+        }
+
+        ul {
+            margin-bottom: 10px;
+        }
+    </style>
+    <nav>
+        <ul>
+            <li><button onclick="myFunction()" class="button">Toggle dark mode</button> </li>
+            <li>
+                <button class="button"
+                    onclick="window.location=`https:/\/docs.google.com/document/d/1NktLwDZlhZg7yUqhMidPTavt3THQ4lvf/edit?pli=1#heading=h.1t3h5sf`">
+                    GitHub</button>
+            </li>
+            <li>
+                <button class="button"
+                onclick="window.location=`https:/\/docs.google.com/document/d/1NktLwDZlhZg7yUqhMidPTavt3THQ4lvf/edit?pli=1#heading=h.1t3h5sf`">
+                    GitHub</button>
+                </li>
+            <li>
+                <button class="button"
+                    href="https:/\/docs.google.com/document/d/1NktLwDZlhZg7yUqhMidPTavt3THQ4lvf/edit?pli=1#heading=h.1t3h5sf">
+                    GitHub</button>
+                </li>
+
+        </ul>
+    </nav>
+
+
+    <!-- about me  -->
+    <div class="about_me">
+        <h1 style="color: rgb(71, 67, 67);">Ali Hammadi</h1>
+    </div>
+
+        <div id="box1">
+             <h6 style="color: white; font-size: 3rem;margin: 0px;"> ABout me </h6>
+             <p> I'm Ali Hammadi working as programmer, i'm 18 Years old. Live in Helsingborg </p>
+        </div>
+    <div id="box2">
+        <h6 style="color: white; font-size: 3rem;margin: 0px;">Projects</h6>
+        <p>  </p>
+    </div>
+    <!-- dark mode -->
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+    <footer>
+        <p style="font-size: 2rem;"> Ali Hammadi Nti Helsingborg</p>
+    </footer>
 </body>
+
 </html>
